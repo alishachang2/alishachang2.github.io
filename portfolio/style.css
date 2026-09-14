@@ -1,0 +1,164 @@
+:root {
+
+  /* ---------- Background ---------- */
+  --sky: linear-gradient(180deg,
+    #4aa8dd 0%, #67bbe4 22%, #8fcfea 48%,
+    #b8e2ef 72%, #d8f0f2 88%, #e8f6f3 100%);
+
+  /* ---------- Ink ---------- */
+  --ink:         #0f2430;   
+  --ink-muted:   #12303d;   
+  --ink-display: #082230;   
+  --ink-inverse: #fafaf9; 
+  --accent:      #c23c16;  
+  --accent-deep: #a83414;  
+
+  /* ---------- Surfaces ---------- */
+  --card:        rgba(255, 255, 255, .9);
+  --card-border: rgba(255, 255, 255, .7);
+  --glass:       rgba(255, 255, 255, .62);  
+  --wash:        rgba(13, 13, 13, .06);     
+  --hairline:    rgba(13, 13, 13, .09);     
+  --outline:     rgba(13, 13, 13, .16);     
+  --dark:        #0d0d0d;                   
+
+  /* ---------- Shadow ---------- */
+  --lift:    0 2px 4px rgba(13, 13, 13, .05), 0 14px 34px -22px rgba(13, 13, 13, .26);
+  --lift-lg: 0 2px 4px rgba(13, 13, 13, .05), 0 18px 46px -24px rgba(13, 13, 13, .3);
+  --lift-hi: 0 20px 44px -20px rgba(13, 13, 13, .34);   
+
+  
+  /* ---------- Families ---------- */
+  --font-display: 'Perfograma', 'IBM Plex Mono', monospace;
+  --font-serif:   'Instrument Serif', serif;
+  --font-sans:    'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono:    'IBM Plex Mono', ui-monospace, monospace;
+
+}
+
+
+
+body {
+    background: linear-gradient(to bottom,#4aa8dd 0%,#67bbe4 22%,#8fcfea 48%,#b8e2ef 72%,#d8f0f2 88%,#e8f6f3 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 44px;
+}
+h1 { font-weight: 400; }
+
+@font-face {
+  font-family: 'Perfograma';
+  src: url('fonts/Perfograma.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+.name{
+    font-family:'Perfograma', sans-serif;
+    font-size: clamp(20px, 4.4vw, 30px);
+    font-weight: 10;
+    letter-spacing: .22em;
+    margin-right: -.22em;
+    text-transform: uppercase;
+    color:#c23c16
+}
+
+.section-title { 
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: -.018em;
+    color: --ink-display;
+    text-shadow: 0 1px 16px rgba(255, 255, 255, 0.34);
+}
+
+body  { font-family: 'IBM Plex Sans', system-ui, sans-serif; }
+
+.label{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    white-space: pre-wrap;
+
+}
+
+.bio {
+    margin-top: 22px;
+    margin-bottom: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 18px;
+    box-shadow: rgba(13, 13, 13, 0.06) 0px 2px 4px, rgba(13, 13, 13, 0.3) 0px 18px 46px -24px;
+    opacity: 1;
+    border:1px solid rgba(8, 40, 60, .12);
+}
+
+.bio-headshot {
+    flex: 1 1 260px;
+    min-width: 190px;
+    max-width: 290px;
+    align-self: stretch;
+    min-height: 270px;
+    object-fit: cover;
+    object-position: 50% 22%;
+    display: block;
+}
+
+.bio-text {
+    align-content: center;
+    flex: 1 1 300px;
+    padding: 26px;
+    gap: 18;
+    min-width: 220px;
+    min-height: 270px;
+    
+}
+
+.bio-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 9px;
+    
+}
+
+.icon-btn {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;   
+    border: 1px solid rgba(13, 13, 13, 0.14);
+    margin-right: 10px;
+}
+
+.resume-btn{
+    height: 42px;
+    width: 82px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 1px solid rgba(13, 13, 13, 0.14);
+    margin-left: auto;
+    margin-right: 20px;
+    background-color: var(--ink);
+    color: var(--ink-inverse);
+}
+
+
+
