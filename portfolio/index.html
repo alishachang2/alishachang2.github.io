@@ -1,61 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alisha Chang's Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Quicksand&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alisha Chang — Portfolio</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <main class="page">
-        <section id="header">
-            <span class="label">PORTFOLIO — 2026</span>
 
-        </section>
+<div class="shell">
 
-        <div class="bio">
-            <!--headshot-->
-            <img src="images/headshot.jpeg" class="bio-headshot">
-            <!--Bio-->
-            <div class="bio-text">
-                <h1 class="name">Alisha Chang</h1>
-                <p class="label">CS Student @ Barnard College, Columbia University.
-Full-Stack Developer</p>
-                <p>Software Engineering student building full-stack applications with Next.js and Python — most recently
-                    a web app for detecting Parkinson’s and tremor symptoms via spiral drawing analysis.</p>
-                <div class="bio-contact">
-                    <div class="icon-btn label">@</div>
-                    <div class="icon-btn label">GH</div>
-                    <div class="icon-btn label">in</div>
-                    <div class="resume-btn ">Résumé</div>
-                </div>
-            </div>
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <a class="wordmark" href="#bio">Alisha Chang</a>
+    <nav class="navlinks" id="navlinks"></nav>
+    <a class="btn btn-sm" id="nav-resume" href="resume.pdf" target="_blank" rel="noopener">
+      Résumé <span class="arrow-sm">↗</span>
+    </a>
+  </header>
 
+  <main class="page">
+
+    <!-- ============ INTRO ============ -->
+    <section id="bio" class="intro">
+      <div class="eyebrow reveal">
+        <span>Portfolio</span>
+        <span class="rule"></span>
+        <span>2026</span>
+      </div>
+
+      <h1 class="name">Alisha Chang</h1>
+
+      <div class="intro-row reveal">
+        <div class="intro-photo">
+          <span class="spine">New York</span>
+          <img id="hero-photo" alt="Alisha Chang">
         </div>
+        <div class="intro-body">
+          <p class="tagline" id="hero-tagline"></p>
+          <p class="lede" id="hero-bio"></p>
+          <div class="contact-row" id="hero-contacts"></div>
+        </div>
+      </div>
+    </section>
 
-        <section id="projects">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="project-slide">
-                <div class="projects"></div>
-            </div>
-        </section>
-        <section id="creative">
-            <h2 class="section-title">Off the Clock</h2>
-            <div class="photo-grid">
-                <div class="photos"></div>
-            </div>
-        </section>
-    </main>
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="stack">
+      <div class="section-head reveal">
+        <h2 class="section-title">Personal &amp; Academic Projects</h2>
+        <span class="count" id="projects-count"></span>
+      </div>
+      <div class="project-grid" id="project-grid"></div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="stack">
+      <div class="section-head reveal">
+        <h2 class="section-title">Experience</h2>
+        <span class="count" id="experience-count"></span>
+      </div>
+      <div class="card timeline reveal" id="timeline"></div>
+    </section>
+
+    <!-- ============ ABOUT & BACKGROUND ============ -->
+    <section id="about" class="stack">
+      <div class="section-head reveal">
+        <h2 class="section-title">About &amp; Background</h2>
+      </div>
+      <div class="about-row">
+        <div class="about-col">
+          <div class="card about-card reveal">
+            <h3 class="label">About</h3>
+            <p class="about-text" id="about-text"></p>
+          </div>
+          <div class="card skills-card reveal">
+            <h3 class="label">Skills</h3>
+            <div class="skills-grid" id="skills-grid"></div>
+          </div>
+        </div>
+        <div class="about-col about-col-side" id="about-side"></div>
+      </div>
+    </section>
+
+    <!-- ============ OFF THE CLOCK ============ -->
+    <section id="creative" class="stack">
+      <div class="section-head reveal">
+        <h2 class="section-title">Off the Clock</h2>
+        <span class="count" id="creative-count"></span>
+      </div>
+      <p class="creative-blurb reveal" id="creative-blurb"></p>
+      <div class="photo-grid" id="photo-grid"></div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer reveal">
+      <div class="footer-left">
+        <span class="footer-name" id="footer-name"></span>
+        <a class="footer-email" id="footer-email" href="#"></a>
+        <span class="label" id="footer-meta"></span>
+      </div>
+      <div class="footer-links" id="footer-links"></div>
+    </footer>
+
+  </main>
+
+  <!-- ============ SIDE RAIL ============ -->
+  <nav class="rail" aria-label="Sections">
+    <div class="rail-links" id="rail-links"></div>
+  </nav>
+
+</div>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="overlay" id="overlay" hidden>
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" id="modal-close" type="button" aria-label="Close">✕</button>
+    <div class="modal-hero" id="modal-hero"></div>
+    <div class="modal-body">
+      <span class="label" id="modal-meta"></span>
+      <h3 class="modal-title" id="modal-title"></h3>
+      <p class="modal-desc" id="modal-desc"></p>
+      <div class="tag-row" id="modal-tags"></div>
+      <div class="modal-links" id="modal-links"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
-
 </html>

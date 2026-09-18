@@ -161,4 +161,20 @@ body  { font-family: 'IBM Plex Sans', system-ui, sans-serif; }
 }
 
 
+.project {
+    margin-top: 22px;
+    margin-bottom: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 18px;
+    box-shadow: rgba(13, 13, 13, 0.06) 0px 2px 4px, rgba(13, 13, 13, 0.3) 0px 18px 46px -24px;
+    opacity: 1;
+    border:1px solid rgba(8, 40, 60, .12);
+}
 
+.project-img{
+    max-width: 25px;
+}
