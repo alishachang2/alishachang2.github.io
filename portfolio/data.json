@@ -31,11 +31,13 @@
     {
       "name": "GitHub",
       "glyph": "GH",
+      "image": "images/github.png",
       "href": "https://github.com/alishachang2"
     },
     {
       "name": "LinkedIn",
       "glyph": "in",
+      "image": "images/linkedin.svg",
       "href": "https://www.linkedin.com/in/alisha-ac/"
     }
   ],
@@ -43,7 +45,7 @@
     {
       "id": "spiral",
       "title": "Spiral Analysis",
-      "meta": "Personal · 2025",
+      "meta": "Research · 2026",
       "slot": "spiral-plot.png",
       "image": "images/spiral-analysis.png",
       "imagePosition": "50% 50%",
@@ -54,56 +56,76 @@
         "Medical"
       ],
       "description": "A non-invasive tool that turns a spiral drawn on a tablet into objective motor measures. Every point (x, y, pressure, time) becomes indices for severity, smoothness, speed, tremor, pressure, and consistency — and with an account each drawing is saved as a baseline, so subtle change surfaces session over session. Built on digitized spiral drawing, an established clinical method for characterizing upper-limb motor performance.",
-      "github": "https://github.com/alishachang2",
+      "github": "https://github.com/Barnard-PL-Labs/NextSpiralAnalysis",
       "site": "https://www.spiralanalysis.com/",
       "video": ""
     },
     {
       "id": "intern",
-      "title": "Mini Internship",
-      "meta": "Personal · 2025",
+      "title": "Green Infrastructure Data Ingestion",
+      "meta": "Internship · 2026",
       "slot": "project-shot.png",
-      "image": null,
+      "image": "images/nycdep.png",
       "tags": [
         "Web",
         "Team project"
       ],
-      "description": "Short-cycle build from a mini internship program. Placeholder copy pending your description.",
-      "github": "https://github.com/alishachang2",
+      "description": "Green Infrastructure Data Ingestion is a full-stack web app for registering and managing Green Infrastructure (GI) projects and their datasets. Built with Next.js/React on the frontend and FastAPI/Supabase on the backend, it lets users create and browse projects across four types (Area-Wide, External, Grant, and Onsite), view related datasets (assets, soil borings, permeability tests, and tributary area data), and bulk-import spreadsheet data through an embedded Impler widget. The whole stack — app, API, and the local Impler import platform — runs via Docker Compose.",
+      "github": "",
       "site": "",
       "video": "https://example.com/demo"
     },
     {
       "id": "sylly",
       "title": "Sylly",
-      "meta": "Personal · 2026",
+      "meta": "Personal · 2025",
       "slot": "app-screen.png",
-      "image": null,
+      "image": "images/sylly.png",
       "tags": [
         "React",
         "Tooling",
         "Students"
       ],
-      "description": "Turns a course syllabus into a usable schedule. Placeholder copy pending your description.",
-      "github": "https://github.com/alishachang2",
+      "description": "Sylly is a web application that converts syllabus documents into structured Google Calendar events, helping students plan their semester quickly and efficiently. Users upload syllabi as PDFs, DOCX files, or images, and the app uses Adobe PDF Services for text extraction and Cohere for AI-powered parsing to identify deadlines, exams, and class sessions. Students can review and edit the extracted events before syncing them to Google Calendar via an .ics file. Built with JavaScript, Python, HTML, CSS, and PHP.",
+      "github": "https://github.com/alishachang2/sylly",
       "site": "",
-      "video": "https://example.com/demo"
+      "video": "http://youtube.com/watch?v=FGe2av2HzeY&feature=youtu.be"
+    },
+    {
+      "id": "redstone",
+      "title": "Redstone Door Tutor",
+      "meta": "Team project · 2026",
+      "slot": "redstone-demo.png",
+      "image": "images/redstone-door-tutor.png",
+      "tags": [
+        "Flask",
+        "Team project",
+        "Education"
+      ],
+      "description": "Redstone Door Tutor is a Minecraft-themed learning platform built to boost student engagement in Fundamentals of Computer Systems, a notoriously difficult required course. The Flask app walks students through a short guided lesson on building a 2-input redstone door, then checks understanding with an interactive quiz and score. Lesson and quiz content live in a data.json file rather than hard-coded HTML, so pages stay easy to edit and extend. Shaped by user interviews with 12 students across iterations to prioritize interactivity and simplify Minecraft-specific mechanics for non-players.",
+      "github": "https://github.com/rickeychiu/ui-finalproject",
+      "site": "",
+      "video": "https://www.youtube.com/watch?v=HipJQHr41R0&feature=youtu.be"
     }
   ],
   "experience": [
     {
-      "period": "Summer 2026",
-      "role": "Internship slot",
-      "org": "Open — seeking SWE internship",
-      "line": "Placeholder row. Replace with company, dates, and one line on what you built.",
-      "placeholder": true
+      "period": "Sep 2026 — Present",
+      "role": "Teaching Assistant",
+      "org": "Columbia University",
+      "line": "CSEE 3827: Fundamentals of Computer Systems"
     },
     {
-      "period": "2025",
-      "role": "Internship slot",
-      "org": "Add your most recent role",
-      "line": "Placeholder row — same as above.",
-      "placeholder": true
+      "period": "Jan 2026 — Present",
+      "role": "Undergraduate Research Assistant",
+      "org": "Barnard College & Columbia University Irving Medical Center",
+      "line": "Barnard Programming Languages Labs under Professor Mark Santolucito; contributing to Spiral Analysis, a non-invasive system for quantifying motor function from handwritten spirals."
+    },
+    {
+      "period": "May 2026",
+      "role": "Software Engineer Intern",
+      "org": "NYC Department of Environmental Protection",
+      "line": "Project to create a modern and improved data ingestion pipeline MVP."
     }
   ],
   "about": {
@@ -158,10 +180,6 @@
         "rowGap": "12px",
         "items": [
           {
-            "label": "Natural Language Processing",
-            "note": "Python"
-          },
-          {
             "label": "User Interface Design",
             "note": "JavaScript"
           },
@@ -197,7 +215,7 @@
         "position": "50% 50%"
       },
       {
-        "title": "Braids, blue wall",
+        "title": "2-Hour line after work",
         "meta": "35mm · portrait",
         "image": "images/photo-2.jpeg",
         "span": 1,
@@ -213,7 +231,7 @@
         "position": "38% 50%"
       },
       {
-        "title": "Driftwood beach",
+        "title": "Framed beach",
         "meta": "35mm · Hawai‘i",
         "image": "images/photo-4.jpeg",
         "span": 1,
@@ -229,8 +247,8 @@
         "position": "60% 42%"
       },
       {
-        "title": "Untitled",
-        "meta": "35mm",
+        "title": "Celebrating Alessandra",
+        "meta": "35mm · portrait",
         "image": "images/photo-6.jpeg",
         "span": 1,
         "ratio": "3 / 4",
@@ -241,7 +259,7 @@
   "nav": {
     "bar": [
       {
-        "label": "Experience",
+        "label": "Work",
         "target": "projects",
         "covers": [
           "projects",
