@@ -84,7 +84,7 @@ a:hover { color: var(--accent); }
 .page {
   flex: 1 1 auto;
   min-width: 0;
-  max-width: 840px;
+  max-width: 880px;
   padding: 136px 44px 150px;
   display: flex;
   flex-direction: column;
@@ -214,6 +214,8 @@ section { scroll-margin-top: 96px; }
 .navlinks { display: flex; align-items: center; gap: 4px; }
 
 .navlinks a {
+  display: inline-flex;
+  align-items: center;
   padding: 7px 13px;
   border-radius: 999px;
   font-size: 12.5px;
@@ -397,6 +399,17 @@ section { scroll-margin-top: 96px; }
   border-color: var(--dark);
   transform: translateY(-3px);
 }
+.icon-btn .contact-icon-image {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  transition: filter .18s;
+}
+.icon-btn:hover .contact-icon-image { filter: invert(1); }
+.icon-btn .contact-icon-image[src$="linkedin.svg"] {
+  width: 12px;
+  height: 12px;
+}
 
 .icon-btn .tip {
   position: absolute;
@@ -473,14 +486,16 @@ section { scroll-margin-top: 96px; }
   flex-direction: column;
   gap: 4px;
   min-width: 0;
+  min-height: 90px;
 }
-.project-meta .title { font-size: 15.5px; font-weight: 500; letter-spacing: -.014em; }
+.project-meta .title { font-size: 15.5px; font-weight: 500; letter-spacing: -.014em; line-height: 1.25; }
 .project-meta .meta {
   font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: .07em;
   text-transform: uppercase;
   color: var(--ink-muted);
+  line-height: 1.4;
 }
 
 /* always-visible "this is clickable" row */
@@ -558,11 +573,15 @@ section { scroll-margin-top: 96px; }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 22px;
   row-gap: 18px;
   padding-top: 16px;
   border-top: 1px solid var(--hairline);
+}
+
+@media (max-width: 620px) {
+  .skills-grid { grid-template-columns: 1fr; }
 }
 .skill-group { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
 .skill-group .group-name {
@@ -611,12 +630,15 @@ section { scroll-margin-top: 96px; }
 
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 270px;
   gap: 14px;
 }
 
 .photo {
   position: relative;
+  height: 100%;
+  aspect-ratio: auto !important;
   border-radius: 16px;
   overflow: hidden;
   background: #e6e5e2;
@@ -662,6 +684,7 @@ section { scroll-margin-top: 96px; }
 }
 
 @media (max-width: 520px) {
+  .photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 220px; }
   .photo.span-2 { grid-column: span 1; }
 }
 

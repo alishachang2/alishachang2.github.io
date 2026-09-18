@@ -53,7 +53,10 @@ function renderIntro(p, contacts) {
   $('#hero-contacts').append(
     ...contacts.map(c => el('a', {
       class: 'icon-btn', href: c.href, target: '_blank', rel: 'noopener', 'aria-label': c.name
-    }, [c.glyph, el('span', { class: 'tip', text: c.name })])),
+    }, [
+      c.image ? el('img', { class: 'contact-icon-image', src: c.image, alt: '' }) : c.glyph,
+      el('span', { class: 'tip', text: c.name })
+    ])),
     el('a', { class: 'btn', href: p.resume, target: '_blank', rel: 'noopener' },
       ['Résumé ', el('span', { class: 'arrow-sm', text: '↗' })])
   );
