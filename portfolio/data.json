@@ -1,0 +1,283 @@
+{
+  "profile": {
+    "name": "Alisha Chang",
+    "eyebrow": [
+      "Portfolio",
+      "2026"
+    ],
+    "vertical": "New York",
+    "tagline": [
+      "CS Student @ Barnard College, Columbia University",
+      "Full-Stack Developer"
+    ],
+    "bio": "Building full-stack applications with Next.js and Python — most recently a web app for detecting Parkinson’s and tremor symptoms via spiral drawing analysis.",
+    "photo": "images/headshot.jpeg",
+    "photoPosition": "50% 16%",
+    "email": "ac5990@barnard.edu",
+    "location": "New York, NY",
+    "availability": "Open to summer 2026 internships",
+    "resume": "resume.pdf",
+    "links": {
+      "github": "https://github.com/alishachang2",
+      "linkedin": "https://www.linkedin.com/in/alisha-ac/"
+    }
+  },
+  "contacts": [
+    {
+      "name": "Gmail",
+      "glyph": "@",
+      "href": "mailto:ac5990@barnard.edu"
+    },
+    {
+      "name": "GitHub",
+      "glyph": "GH",
+      "href": "https://github.com/alishachang2"
+    },
+    {
+      "name": "LinkedIn",
+      "glyph": "in",
+      "href": "https://www.linkedin.com/in/alisha-ac/"
+    }
+  ],
+  "projects": [
+    {
+      "id": "spiral",
+      "title": "Spiral Analysis",
+      "meta": "Personal · 2025",
+      "slot": "spiral-plot.png",
+      "image": "images/spiral-analysis.png",
+      "imagePosition": "50% 50%",
+      "imageZoom": 2.5,
+      "tags": [
+        "Motor assessment",
+        "Data viz",
+        "Medical"
+      ],
+      "description": "A non-invasive tool that turns a spiral drawn on a tablet into objective motor measures. Every point (x, y, pressure, time) becomes indices for severity, smoothness, speed, tremor, pressure, and consistency — and with an account each drawing is saved as a baseline, so subtle change surfaces session over session. Built on digitized spiral drawing, an established clinical method for characterizing upper-limb motor performance.",
+      "github": "https://github.com/alishachang2",
+      "site": "https://www.spiralanalysis.com/",
+      "video": ""
+    },
+    {
+      "id": "intern",
+      "title": "Mini Internship",
+      "meta": "Personal · 2025",
+      "slot": "project-shot.png",
+      "image": null,
+      "tags": [
+        "Web",
+        "Team project"
+      ],
+      "description": "Short-cycle build from a mini internship program. Placeholder copy pending your description.",
+      "github": "https://github.com/alishachang2",
+      "site": "",
+      "video": "https://example.com/demo"
+    },
+    {
+      "id": "sylly",
+      "title": "Sylly",
+      "meta": "Personal · 2026",
+      "slot": "app-screen.png",
+      "image": null,
+      "tags": [
+        "React",
+        "Tooling",
+        "Students"
+      ],
+      "description": "Turns a course syllabus into a usable schedule. Placeholder copy pending your description.",
+      "github": "https://github.com/alishachang2",
+      "site": "",
+      "video": "https://example.com/demo"
+    }
+  ],
+  "experience": [
+    {
+      "period": "Summer 2026",
+      "role": "Internship slot",
+      "org": "Open — seeking SWE internship",
+      "line": "Placeholder row. Replace with company, dates, and one line on what you built.",
+      "placeholder": true
+    },
+    {
+      "period": "2025",
+      "role": "Internship slot",
+      "org": "Add your most recent role",
+      "line": "Placeholder row — same as above.",
+      "placeholder": true
+    }
+  ],
+  "about": {
+    "paragraph": "I work at the seam between healthcare and software — the Spiral Analysis project came out of wanting objective, repeatable motor measures from something as ordinary as drawing a spiral on a tablet. Most of what I build is full-stack: a Python or C core doing the real work, a JavaScript front end on top.",
+    "skills": [
+      {
+        "name": "Languages",
+        "items": [
+          "Python",
+          "JavaScript",
+          "Java",
+          "C",
+          "SQL"
+        ]
+      },
+      {
+        "name": "Frameworks",
+        "items": [
+          "React",
+          "Next.js",
+          "Node"
+        ]
+      },
+      {
+        "name": "Tools",
+        "items": [
+          "Git",
+          "Figma",
+          "MIPS"
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "name": "Education",
+        "columns": "1fr",
+        "rowGap": "12px",
+        "items": [
+          {
+            "label": "Barnard College, Columbia University",
+            "note": "B.A. Computer Science, Economics minor · ’28"
+          },
+          {
+            "label": "Washington University in St. Louis",
+            "note": "Computer Science · transferred"
+          }
+        ]
+      },
+      {
+        "name": "Coursework",
+        "columns": "repeat(auto-fit,minmax(150px,1fr))",
+        "rowGap": "12px",
+        "items": [
+          {
+            "label": "Natural Language Processing",
+            "note": "Python"
+          },
+          {
+            "label": "User Interface Design",
+            "note": "JavaScript"
+          },
+          {
+            "label": "Systems Programming",
+            "note": "C"
+          },
+          {
+            "label": "Data Structures & Algorithms",
+            "note": "Java"
+          },
+          {
+            "label": "Discrete Mathematics",
+            "note": "Python"
+          },
+          {
+            "label": "Fundamentals of Computer Systems",
+            "note": "MIPS"
+          }
+        ]
+      }
+    ]
+  },
+  "creative": {
+    "blurb": "Photography and other things I make when nothing is due.",
+    "photos": [
+      {
+        "title": "Kualoa, morning",
+        "meta": "35mm · Hawai‘i",
+        "image": "images/photo-1.jpeg",
+        "span": 2,
+        "ratio": "3 / 2",
+        "position": "50% 50%"
+      },
+      {
+        "title": "Braids, blue wall",
+        "meta": "35mm · portrait",
+        "image": "images/photo-2.jpeg",
+        "span": 1,
+        "ratio": "3 / 4",
+        "position": "50% 38%"
+      },
+      {
+        "title": "At the trough",
+        "meta": "35mm · Hawai‘i",
+        "image": "images/photo-3.jpeg",
+        "span": 1,
+        "ratio": "3 / 4",
+        "position": "38% 50%"
+      },
+      {
+        "title": "Driftwood beach",
+        "meta": "35mm · Hawai‘i",
+        "image": "images/photo-4.jpeg",
+        "span": 1,
+        "ratio": "3 / 4",
+        "position": "50% 50%"
+      },
+      {
+        "title": "Flash, late",
+        "meta": "35mm · portrait",
+        "image": "images/photo-5.jpeg",
+        "span": 2,
+        "ratio": "3 / 2",
+        "position": "60% 42%"
+      },
+      {
+        "title": "Untitled",
+        "meta": "35mm",
+        "image": "images/photo-6.jpeg",
+        "span": 1,
+        "ratio": "3 / 4",
+        "position": "50% 50%"
+      }
+    ]
+  },
+  "nav": {
+    "bar": [
+      {
+        "label": "Experience",
+        "target": "projects",
+        "covers": [
+          "projects",
+          "experience",
+          "about"
+        ]
+      },
+      {
+        "label": "Off the Clock",
+        "target": "creative",
+        "covers": [
+          "creative"
+        ]
+      }
+    ],
+    "rail": [
+      {
+        "label": "Intro",
+        "target": "bio"
+      },
+      {
+        "label": "Projects",
+        "target": "projects"
+      },
+      {
+        "label": "Experience",
+        "target": "experience"
+      },
+      {
+        "label": "About",
+        "target": "about"
+      },
+      {
+        "label": "Off the Clock",
+        "target": "creative"
+      }
+    ]
+  }
+}
